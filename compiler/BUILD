@@ -31,7 +31,7 @@ py_library(
 py_binary(
     name = "compiler",
     srcs = ["compiler.py"],
-    python_version = "PY2",
+    python_version = "PY3",
     main = "compiler.py",
     srcs_version = "PY2AND3",
     deps = [":compiler_lib"],
@@ -42,7 +42,7 @@ parfile(
     name = "compiler.par",
     src = ":compiler",
     compiler = ":compiler",
-    default_python_version = "PY2",
+    default_python_version = "PY3",
     main = "compiler.py",
 )
 
